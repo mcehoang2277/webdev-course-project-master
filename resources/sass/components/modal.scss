@@ -1,0 +1,108 @@
+.modal {
+
+    &-content-custom {
+        border-radius: 10px;
+        background-color: #ffffff;
+        color: $color-2-primary;
+        font-size: 1.6rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        position: relative;
+        border: unset;
+    }
+
+    &-header-custom {
+        border: unset;
+        padding: unset;
+        position: absolute;
+        right: 8%;
+        top: 4%;
+
+        button {
+            background-color: white;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            position: absolute;
+            top: 0;
+            cursor: pointer;
+            z-index: 100;
+            margin: unset !important;
+        }
+    }
+
+    &-body-custom {
+        padding: 0;
+    }
+
+    &-footer-custom {
+        border: unset;
+        padding: unset;
+        margin-top: 20px;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
+    &-btn {
+        background-color: white;
+        padding: 6px;
+        border-bottom-left-radius: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 3px solid $color-2-primary;
+
+        button {
+            font-size: 3rem;
+            border-bottom-left-radius: 10px;
+            height: 40px;
+            width: 40px;
+            line-height: 30px;
+            border: unset;
+        }
+
+        button:last-child {
+            background-color: $color-2-primary;
+            border-radius: unset;
+        }
+
+        input {
+            border: unset;
+            background: unset;
+            font-size: 2rem;
+            width: 50px;
+            text-align: center;
+            outline: none;
+            font-weight: 500;
+            -webkit-appearance: textfield;
+            -moz-appearance: textfield;
+            appearance: textfield;
+            margin: 0;
+        }
+
+        &-add {
+            text-transform: uppercase;
+            padding: 8px 40px;
+            font-size: 1.8rem;
+            font-weight: 700;
+            background-color: $color-3-primary;
+            border: 4px solid $color-3-primary;
+            border-radius: 0 0 10px 0;
+
+            &:hover {
+                background-color: $color-3-primary;
+                border-color: $color-3-primary;
+            }
+        }
+    }
+}
+
+.form-check-custom {
+    margin-bottom: 15px !important;
+}
+
+.form-check-input:checked {
+    background-color: $color-3-primary !important;
+    border-color: $color-3-primary !important;
+}

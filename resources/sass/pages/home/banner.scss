@@ -1,0 +1,44 @@
+.banner-container {
+    text-align: center;
+    overflow: hidden;
+    z-index: -1;
+
+    .dots-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 16px;
+        gap: 18px;
+
+        .dot {
+            width: 17px;
+            height: 17px;
+            border-radius: 50%;
+        }
+
+        .active {
+            background-color: white;
+        }
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &-imgs {
+        border-radius: 23px;
+
+        @include mobile {
+            border-radius: 0;
+
+        }
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}

@@ -1,0 +1,108 @@
+.sides-container {
+    padding: 100px 80px;
+    height: fit-content;
+
+    @include mobile {
+        padding: 50px 80px;
+    }
+
+
+    .side {
+        &-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+
+        &-category {
+            text-transform: capitalize;
+            text-align: center;
+            font-size: 4rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            margin-bottom: 30px;
+            color: $color-1-primary;
+
+            @include mobile {
+                font-size: 3rem;
+            }
+        }
+
+        &-item {
+            border: 1px solid $color-2-primary;
+            border-radius: 15px;
+            overflow: hidden;
+            width: 22.5%;
+            transition: all 0.3s ease-in-out;
+            box-shadow: 2px 2px 3px 2px rgba($color-2-primary, $alpha: .8);
+            cursor: pointer;
+            min-height: 300px;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+
+            @include tablet {
+                width: 45%;
+            }
+
+            @include mobile {
+                width: 100%;
+            }
+        }
+
+        &-img {
+            overflow: hidden;
+            background: rgba($color-4-primary, $alpha: .5);
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transition: all 0.4s ease-in-out;
+            }
+
+            &:hover {
+                img {
+                    transform: scale(1.1);
+                }
+            }
+        }
+
+        &-detail {
+            flex: 1;
+            padding: 20px 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            text-align: center;
+            color: $color-4-primary;
+
+            @include mobile {
+                justify-content: unset;
+            }
+        }
+
+        &-name {
+            font-size: 1.8rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            text-decoration: none;
+            color: $color-4-primary;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        &-option {
+            margin-top: 10px;
+            font-size: 1.6rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+    }
+}

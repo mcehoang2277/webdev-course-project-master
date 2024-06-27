@@ -1,0 +1,35 @@
+.payment-option-item {
+    display: flex;
+    align-self: center;
+    gap: 35px;
+    border: 2px solid $color-2-primary;
+    border-radius: 10px;
+    padding: 5px 5px 5px 20px;
+    margin-bottom: 15px;
+
+    @include mobile {
+        padding: 5px 5px 5px 10px;
+        gap: 10px;
+    }
+
+    input {
+        width: 18px;
+        height: 18px;
+        transform: translateY(80%);
+    }
+
+    img {
+        width: 50px;
+    }
+
+    p {
+        font-size: 20px;
+        font-weight: 600;
+        margin: unset;
+        line-height: 50px;
+    }
+
+    &:nth-child(4) {
+        margin-bottom: 50px;
+    }
+}

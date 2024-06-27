@@ -1,0 +1,159 @@
+footer {
+    width: 100vw;
+    height: 100%;
+    color: $body-bg;
+    background-color: $color-2-primary;
+    padding: 20px;
+}
+
+.footer-content {
+    width: 50%;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 150px;
+    display: inline-block;
+}
+
+.footer-content-right {
+    width: 60%;
+}
+
+.footer-content-right td {
+    font-size: 20px;
+    line-height: 200%;
+}
+
+.ft-menu {
+    .socialmedia {
+        width: 25px;
+        height: 25px;
+    }
+
+    #youtube {
+        width: 28px;
+        height: 21px;
+    }
+}
+
+.ft-list a {
+    text-decoration: none;
+    font-weight: 600;
+    color: $body-bg;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+}
+
+.footer-bottom ul {
+    display: flex;
+    width: 100%;
+}
+
+.footer-bottom li {
+    list-style-type: none;
+    font-size: 1.6rem;
+}
+
+.footer-bottom-main {
+    padding-right: 1%;
+    font-weight: 700;
+}
+
+.footer-bottom-content {
+    padding-right: 7%;
+}
+
+.footer-bottom-right {
+    padding-left: 30%;
+}
+
+.footer-bottom li {
+    padding-bottom: 1%;
+}
+
+@include mobile {
+    footer {
+        padding: 10px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .footer-content {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .footer-content-right {
+        width: 100%;
+    }
+
+    .footer-content-right td {
+        font-size: 16px;
+    }
+
+    .footer-bottom {
+        margin-top: 10px;
+    }
+
+    .footer-bottom ul {
+        flex-direction: column;
+        margin-left: 0;
+    }
+
+    .footer-bottom-right {
+        padding-left: 0;
+    }
+
+    .footer-bottom li {
+        padding-bottom: 0;
+    }
+}
+
+@include tablet {
+    footer {
+        padding: 10px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .footer-content {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .footer-content-right {
+        width: 100%;
+    }
+
+    .footer-content-right td {
+        font-size: 16px;
+    }
+
+    .footer-bottom {
+        margin-top: 10px;
+    }
+
+    .footer-bottom ul {
+        flex-direction: column;
+        margin-left: 0;
+    }
+
+    .footer-bottom-right {
+        padding-left: 0;
+    }
+
+    .footer-bottom li {
+        padding-bottom: 0;
+    }
+}

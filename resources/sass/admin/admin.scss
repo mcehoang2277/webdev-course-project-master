@@ -1,0 +1,14 @@
+@import '../variables';
+@import 'order/order-detail';
+
+.bg-custom {
+    background-color: $color-2-primary;
+    background-image: linear-gradient(180deg, $color-2-primary 30%, $color-5-primary 90%);
+    background-size: cover;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: $color-2-primary;
+    border-color: $color-2-primary;
+}

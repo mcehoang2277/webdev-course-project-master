@@ -1,0 +1,99 @@
+.sub-nav {
+    &-container {
+        background-color: $white-primary-color;
+        padding: 20px;
+        border: 2px solid $color-4-primary;
+        border-radius: 15px;
+        position: relative;
+        margin: 20px auto 0;
+        width: 95vw;
+        transition: all 0.2s ease-in-out;
+
+        @include mobile {
+            overflow-x: scroll;
+            padding: 0;
+            border: none;
+        }
+    }
+
+    &-list {
+        list-style: none;
+        padding: unset;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 75px 0;
+
+        @include mobile {
+            margin: 0;
+            font-size: 1.6rem;
+            @include tab;
+            gap: 10px;
+
+            overflow-x: scroll;
+
+        }
+
+        li {
+            cursor: pointer;
+
+            a {
+                text-decoration: none;
+                color: $color-2-primary;
+                font-size: 2rem;
+                font-weight: 700;
+
+                &:hover {
+                    color: $color-3-primary;
+                }
+
+                &.active {
+                    color: $color-3-primary;
+                    text-decoration: $color-3-primary underline;
+                }
+            }
+
+        }
+    }
+
+    &-option {
+        margin: 15px 40px 0;
+        border-top: 2px solid $color-2-primary;
+        padding-top: 20px;
+
+        &.none {
+            display: none !important;
+        }
+
+        @include mobile {
+            overflow-x: scroll;
+            padding: 0;
+            margin: 15px 10px 0;
+        }
+
+        @include tablet {
+            overflow-x: scroll;
+            margin: 15px 10px 0;
+        }
+
+        ul {
+            border-radius: 33px;
+            display: flex;
+            list-style: none;
+            align-items: center;
+            justify-content: space-between;
+            margin: unset;
+            padding: 15px 0;
+
+            @include mobile {
+                gap: 10px;
+            }
+
+            @include tablet {
+                gap: 10px;
+            }
+
+            @include tab;
+        }
+    }
+}

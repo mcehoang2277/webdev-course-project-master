@@ -1,0 +1,39 @@
+.detail-cus-info {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.detail-info {
+    border-bottom: 1px solid #ebebeb;
+
+    p {
+        margin: unset;
+    }
+
+    p:last-child {
+        margin-top: 5px;
+        color: black;
+        font-weight: 600;
+        font-size: 16px;
+    }
+}
+
+.detail-status-info {
+    display: flex;
+    gap: 25px;
+}
+
+.detail-table {
+    margin-top: 30px;
+}
+
+.detail-footer_right {
+    p {
+        font-size: 22px;
+    }
+}
+
+.detail-table {
+    margin-bottom: 30px;
+}

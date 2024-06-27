@@ -1,0 +1,82 @@
+.myheader {
+    padding: 18px 50px;
+    font-size: 1.6rem !important;
+    width: 100vw;
+    transition: all 0.2s ease-in-out;
+    position: relative;
+    margin: 0 auto;
+
+    @include mobile {
+        padding: 18px 20px;
+        overflow: hidden;
+    }
+
+    .nav-container {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    a {
+        color: black;
+        text-decoration: none;
+        display: inline-block;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .icons-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .nav-right {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+
+        @include mobile {
+            display: unset;
+        }
+
+        @include tablet {
+            display: unset;
+        }
+    }
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 999;
+    background-color: white;
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-toggle {
+    border: none !important;
+    background-color: $body-bg !important;
+}
+
+.dropdown-menu {
+    background-color: $body-bg !important;
+    padding: 10px;
+}
+
+.dropdown-item {
+    text-align: center;
+    color: $black-primary-color !important;
+    font-size: 2rem !important;
+
+    a {
+        font-weight: unset;
+    }
+
+    &:active {
+        background-color: $body-bg !important;
+        color: $color-2-primary !important;
+    }
+}

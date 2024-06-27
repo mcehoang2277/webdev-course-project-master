@@ -1,0 +1,63 @@
+// Variables
+@import 'variables';
+
+// Mixins
+@import 'mixins';
+
+@import "splash_screen";
+// Bootstrap
+@import 'bootstrap/scss/bootstrap';
+
+// Partials
+@import 'partials/back-to-top.scss';
+
+// Responsive
+@import 'responsive';
+
+// Components
+@import 'components/modal';
+@import 'components/toast';
+@import 'components/cart-item';
+@import 'components/payment-option';
+
+@import 'header.scss';
+@import 'footer.scss';
+@import './pages/home/booking';
+@import './pages/home/banner';
+@import './pages/home/products';
+
+// Menu
+@import './pages/menu/combo';
+@import './pages/menu/pizza';
+@import './pages/menu/dessert';
+@import './pages/menu/drink';
+@import './pages/menu/side';
+@import './pages/menu/sub-nav';
+@import './pages/menu/product-detail';
+
+// Auth
+@import './auth/auth';
+
+// Checkout
+@import './pages/checkout/index';
+
+// Tracking
+@import './pages/track-oder/track-order';
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+.app-container {
+    overflow: hidden;
+    width: 100%;
+}

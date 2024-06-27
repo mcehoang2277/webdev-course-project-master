@@ -1,0 +1,111 @@
+.box_pizza{
+    width:700px;
+    height:700px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:relative;
+}
+.slice_pizza {
+    width: 500px; /* Tự động điều chỉnh chiều rộng của ảnh để vừa khung chứa */
+    height: auto; /* Tự động tính chiều cao để giữ tỷ lệ khung hình */
+    position: absolute;
+    
+}
+.slice1{
+    width: 113px;
+    top: 348px;
+    left: 336px;
+    rotate: 0deg;   
+    animation-delay: 0.3s;
+}
+.slice1, .slice2, .slice3, .slice4, .slice5, .slice6 {
+    animation: pop 2.1s ease infinite;
+}
+.slice2{
+    width: 118px;
+    top: 337px;
+    left: 253px;
+    rotate: 121deg;
+    animation-delay: 0.6s;
+}
+.slice3{
+    width: 113px;
+    top: 292px;
+    left: 236px;
+    rotate: 0deg;
+    animation-delay: 0.9s;
+}
+.slice4{
+    width: 118px;
+    top: 236px;
+    left: 250px;
+    rotate: 0deg;
+    animation-delay: 1.2s;
+}
+.slice5{
+    width: 105px;
+    top: 236px;
+    left: 352px;
+    rotate: 0deg;
+    animation-delay: 1.5s;
+}
+.slice6{
+    width: 113px;
+    top: 301px;
+    left: 351px;
+    rotate: 0deg;
+    animation-delay: 1.8s;
+}
+.loading-box{
+    position: absolute;
+    left: 187px;
+    bottom: 40px;
+    width: 348px;
+    height: 181px;
+}
+.loading-text{
+    background-color: RGB(113,93,151);
+    font-size:50px;
+    color: RGB(255,226,228);
+    border-right: 5px solid black;
+    font-family: monospace;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation:
+        typing 2s steps(17) infinite,
+        cursor .4s step-end infinite alternate;
+}
+
+@keyframes pop {
+    0% {
+    transform: scale(0.2);
+
+    }
+    50% {
+    transform: scale(1.05);
+    }
+    100% {
+    transform: scale(1);
+    }
+}
+@keyframes cursor{
+    50% { border-color: transparent;}
+}
+@keyframes typing{
+    from {width: 0;}
+}
+#splash-screen {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height: fit-content;
+    width: fit-content;
+    opacity: 1; 
+    transition: opacity 10s; 
+}
+#homepage {
+    opacity: 0; 
+    transition: opacity 1s; 
+}

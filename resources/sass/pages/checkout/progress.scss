@@ -1,0 +1,76 @@
+.progress {
+    &-container {
+        display: flex;
+        font-size: 2.6rem;
+        font-weight: 500;
+        justify-content: center;
+        align-items: center;
+        color: $color-1-primary;
+        padding: 50px 0 20px 0;
+        border-bottom: 1px solid $color-1-primary;
+        flex-direction: column;
+    }
+
+    &-item {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+        z-index: 10;
+    }
+
+    &-active {
+        background-color: $color-1-primary !important;
+    }
+
+    &-point {
+        width: 35px;
+        height: 35px;
+        border-radius: 25px;
+        background-color: white;
+        border: 1px solid $color-1-primary;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &-line {
+        width: 140px;
+        height: 1px;
+        background-color: $color-1-primary;
+    }
+
+    &-name {
+        text-align: center;
+        display: flex;
+        width: 35%;
+        justify-content: center;
+        gap: 10%;
+    }
+
+    @include mobile {
+        &-container {
+            padding: 20px 0 20px 0;
+            font-size: 2rem;
+        }
+
+        &-item {
+            gap: 20px;
+        }
+
+        &-point {
+            width: 25px;
+            height: 25px;
+        }
+
+        &-line {
+            width: 50px;
+            height: 1px;
+        }
+
+        &-name {
+            width: 100%;
+            gap: 10px;
+        }
+    }
+}
